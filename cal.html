@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="fisrt" step="any"/>
+    <select  id="selec">
+        <option value="+">+</option>
+        <option value="-">_</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" id="second" step="any"/>
+    <br>
+    <br>
+    <button onclick="madharchod()">
+        Calculate
+    </button>
+    <input type="number" id="result" readonly=""/>
+    
+</body>
+    <script type="text/javascript">
+        function  madharchod(){
+           var a= document.getElementById('first').value;
+           var b= document.getElementById('second').value;
+           var c= document.getElementById('selec').value;
+         if(c=="+"){
+            var r= parseInt(a)+ parseInt(b);
+         }
+         if(c=="-"){
+            var r= parseInt(a)- parseInt(b);
+         }
+         if(c=="*"){
+            var r= parseInt(a)* parseInt(b);
+         }
+         if(c=="/"){
+            var r= parseInt(a)/ parseInt(b);
+         }
+         document.getElementById('result').value=r;
+
+        }
+    </script>
+</html>

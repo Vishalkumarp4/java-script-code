@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Please Entre your Number
+    <br>
+    <input onkeyup="vis(this)">
+    <div id="lun"></div>
+</body>
+<script>
+    function vis(elm){
+        if(isNaN(elm.value)){
+            document.getElementById('lun').innerText="Please entre number only";
+        }
+        else{   
+            document.getElementById('lun').innerText="";
+            if((elm.value.length>10)){
+                document.getElementById('lun').innerText="Please entre 10 digit only";
+            }
+            else{   
+                document.getElementById('lun').innerText="";
+            }
+        }
+        
+        
+       
+    }
+</script>
+
+
+</html>

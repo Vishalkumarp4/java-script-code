@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+            text-align: center;
+            font-size: 100px;
+        }
+        .blue{
+            color: blue;
+            text-align: center;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="dat" class="red">
+        Hello world
+    </div>
+        <button onclick="vis()">change</button>
+
+    <h1 id="lun"></h1>
+
+</body>
+<script>
+    var a=document.getElementById('dat');
+    function vis(){
+        
+        var b=a.getAttribute("class");
+        //document.getElementById('lun').innerText=b;
+        if(b=="red"){
+            a.setAttribute("class","blue");
+        }
+        else{
+            a.setAttribute("class","red");
+        }
+       
+    }
+</script>
+</html>

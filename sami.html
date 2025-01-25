@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .vishal{
+            width: 200px;
+            height: 200px;
+            border: 2px double rgb(27, 41, 167);
+            margin: auto;
+            background-color: rgb(164, 195, 195);
+
+        }
+        .arbab{
+            width: 200px;
+            height: 200px;
+            border: 2px double black;
+            margin: auto;
+
+        }
+        .visha{
+            width: 200px;
+            height: 200px;
+            border: 2px double rgb(27, 41, 167);
+            margin: auto;
+
+        }
+        .arba{
+            width: 200px;
+            height: 200px;
+            border: 2px double black;
+            margin: auto;
+
+        }
+        .don{
+        
+            margin-top: 150px;
+            margin-left: 500px;
+            border: 2px double black;
+            width: 200px;
+            background-color: rgb(169, 195, 195);
+        }
+        #button{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="vishal">
+        set wake up time:
+        <input id="unlike" type="text" list="arbab">
+        <datalist id="arbab">
+            <option value="5pm-6pm">5pm-6pm</option>
+            <option value="6pm-7pm">6pm-7pm</option>
+            <option value="7pm-8pm">7pm-8pm</option>
+            <option value="9pm-10pm">9pm-10pm</option>
+            <option value="11pm-12pm">11pm-12pm</option>
+            <option value="1pm-2pm">1pm-2pm</option>
+
+
+
+        </datalist>   
+
+
+         lunch time:
+        <input id="unlik" type="text" list="arba">
+        <datalist id="arba">
+            <option value="1pm-2pm">1pm-2pm</option>
+            <option value="2pm-3pm">2pm-3pm</option>
+            <option value="6pm-7pm">3pm-4pm</option>
+            <option value="7pm-8pm">5pm-6pm</option>
+            <option value="9pm-10pm">7pm-8pm</option>
+            <option value="11pm-12pm">9pm-10pm</option>
+            <option value="1pm-2pm">11pm-12pm</option>
+
+
+
+        </datalist>
+
+        Dinner Time:
+        <input id="unli" type="text" list="arba">
+        <datalist id="arba">
+            <option value="9pm-10pm">9pm-10pm</option>
+            <option value="6pm-7pm">2pm-3pm</option>
+            <option value="6pm-7pm">3pm-4pm</option>
+            <option value="7pm-8pm">5pm-6pm</option>
+            <option value="9pm-10pm">7pm-8pm</option>
+            <option value="11pm-12pm">9pm-10pm</option>
+            <option value="1pm-2pm">11pm-12pm</option>
+
+
+
+        </datalist>
+    </div>    
+
+
+    <div class="don">
+        <button id="button" onclick="lund()">Click me</button>
+
+
+        <div class="ar">
+            Wake up time:
+            <div id="dalo"></div>
+        </div>
+      
+
+        <div class="a">
+            Lunch time:
+            <div id="dal"></div>
+        </div>
+
+        <div class="laura">
+            Dinner time:
+            <div id="da"></div>
+        </div>
+    </div>
+
+
+   
+</body>
+<script>
+    function lund(){
+       var a= document.getElementById('unlike').value;
+       //document.getElementById('like').innerHTML.value=a;
+       //document.getElementById('like').innerText=a;
+       document.getElementById('dalo').innerText=a;
+
+       var b= document.getElementById('unlik').value;
+       document.getElementById('dal').innerText=b;
+
+       var c= document.getElementById('unli').value;
+       document.getElementById('da').innerText=b;
+
+
+
+
+    }
+</script>
+</html>

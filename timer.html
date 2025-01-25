@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-size: 500px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body onload="timer()">
+     <h1>
+
+     </h1>
+
+     
+</body>
+
+<script>
+    function timer(){
+    var date= new Date();
+    var h= date.getHours();
+    var m= date.getMinutes();
+    var s= date.getSeconds();
+    var tim=h+":"+m +":"+s+"am";
+    document.getElementsByTagName('h1')[0].innerText=tim;
+    setTimeout(timer,1000);
+
+    }
+            
+
+</script>
+</html>

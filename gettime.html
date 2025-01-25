@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="time"></h1>
+    <button onclick="tim()"> date</button>
+    <button onclick="tim1()"> full year</button>
+    <button onclick="tim2()"> Month</button>
+
+</body>
+<script>
+    var date= new Date();
+      function tim(){
+           document.getElementById('time').innerText=date;
+      }
+      function tim1(){
+        document.getElementById('time').innerText=date.getFullYear();
+     }
+     function tim2(){
+            var  month=["jan","feb","march","april","may","june","july","august","september","october","november","december"];
+        document.getElementById('time').innerText=month [date.getMonth()];
+
+     }
+
+</script>
+</html>

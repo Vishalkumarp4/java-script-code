@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="vis">  </h1> 
+    <button onclick="pop()">pop</button>
+    <button onclick="push()">push</button>
+</body>
+<script>
+
+          var  a=["mango","apple","banana","lichi"];
+          var b=a;
+          document.getElementById('vis').innerText=b;
+               
+    function pop(){
+        b.pop();
+        document.getElementById('vis').innerText=b;
+
+
+        
+
+    }
+    function push(){
+       // b.push("lund");
+        //document.getElementById('vis').innerText=b;
+        var x= prompt("please entre a fruits","");
+        b.push(x);
+        document.getElementById('vis').innerText=b;
+        
+    }
+    
+
+</script>
+</html>
